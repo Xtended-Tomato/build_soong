@@ -185,13 +185,13 @@ type productVariables struct {
 
 	DeviceKernelHeaders []string `json:",omitempty"`
 
-	// include GZOSP variables
-	Gzosp android.ProductVariables
-
 	BoardUsesQTIHardware *bool `json:",omitempty"`
 
 	BoardUsesQCOMHardware *bool `json:",omitempty"`
 	TargetUsesQCOMBsp *bool `json:",omitempty"`
+
+     // include GZOSP variables
+        Gzosp android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
